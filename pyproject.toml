@@ -1,0 +1,17 @@
+[tool.poetry]
+name = "fast-ws-chat-server"
+version = "0.1.0"
+description = ""
+authors = ["Robby Sarvis <rjs.app.dev@gmail.com>"]
+readme = "README.md"
+packages = [{include = "fast_ws_chat_server"}]
+
+[tool.poetry.dependencies]
+python = "^3.11"
+fastapi = "^0.98.0"
+uvicorn = {extras = ["standard"], version = "^0.22.0"}
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
